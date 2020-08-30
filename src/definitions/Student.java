@@ -23,4 +23,37 @@ public class Student {
             nameOfIssuedbooks[indexNumber] = new Book("Book " + (indexNumber));
         }
     }
+
+    public String getStudentName() {
+        return studentName;
+    }
+
+    public void setStudentName(String studentName) {
+        this.studentName = studentName;
+    }
+
+    public long getRollNumber() {
+        return rollNumber;
+    }
+
+    public void setRollNumber(long rollNumber) {
+        this.rollNumber = rollNumber;
+    }
+
+    public int getNumberOfBooksIssued() {
+        return numberOfBooksIssued;
+    }
+
+    public void setNumberOfBooksIssued(int numberOfBooksIssued) {
+        this.numberOfBooksIssued = numberOfBooksIssued;
+    }
+
+    public Book[] getNameOfIssuedbooks() {
+        return nameOfIssuedbooks;
+    }
+
+    public void setNameOfIssuedbooks(Book[] nameOfIssuedbooks) {
+        this.nameOfIssuedbooks = nameOfIssuedbooks;
+    }
+
 }
