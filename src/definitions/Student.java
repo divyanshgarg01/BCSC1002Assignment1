@@ -11,10 +11,10 @@ import java.util.Objects;
 
 public class Student {
 
+    int numberOfIssuedBooks = 0;
     private String studentName;
     private long rollNumber;
     private int numberOfBooksIssued;
-    int numberOfIssuedBooks = 0;
     private Book[] nameOfIssuedbooks;
 
     public Student() {
@@ -87,4 +87,34 @@ public class Student {
         return result;
     }
 
+    /**
+     * This method shows all issued books from your library.
+     */
+    public void myIssuedBooks() {
+        for (int indexNumber = 0; indexNumber < nameOfIssuedbooks.length; indexNumber++) {
+            System.out.println(nameOfIssuedbooks[indexNumber]);
+
+        }
+    }
+
+    /**
+     * This method issues a new book.
+     *
+     * @param bookName The name of the book to be issu00ed.
+     */
+    public void getNewBook(String bookName) {
+        System.out.println(bookName + " was added to your books.");
+
+    }
+
+    /**
+     * this method is used to return a previously issued books.
+     *
+     * @param bookName the name of the book to be issued.
+     */
+    public void doReturnBook(String bookName) {
+        System.out.println(bookName + " has been returned.");
+    }
 }
+
+
