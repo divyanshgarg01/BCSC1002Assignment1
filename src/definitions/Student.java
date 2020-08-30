@@ -11,4 +11,16 @@ public class Student {
     private String studentName;
     private long rollNumber;
     private int numberOfBooksIssued;
+    int numberOfIssuedBooks = 0;
+    private Book[] nameOfIssuedbooks;
+
+    public Student() {
+        studentName = "Not Given";
+        rollNumber = 191500275;
+        numberOfBooksIssued = 5;
+        this.nameOfIssuedbooks = new Book[10];
+        for (int indexNumber = 0; indexNumber < nameOfIssuedbooks.length; indexNumber++) {
+            nameOfIssuedbooks[indexNumber] = new Book("Book " + (indexNumber));
+        }
+    }
 }
